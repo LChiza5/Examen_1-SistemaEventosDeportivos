@@ -6,6 +6,7 @@ package Personas;
 
 import java.time.LocalDate;
 
+
 /**
  *
  * @author Student
@@ -13,12 +14,16 @@ import java.time.LocalDate;
 public class Deportista extends Persona {
     private LocalDate FechaNacimiento;
     private String disciplina;
+    private Categoria categoria;
 
-    public Deportista(LocalDate FechaNacimiento, String disciplina, int id, String nombre) {
+    public Deportista(LocalDate FechaNacimiento, String disciplina, Categoria categoria, int id, String nombre) {
         super(id, nombre);
         this.FechaNacimiento = FechaNacimiento;
         this.disciplina = disciplina;
+        this.categoria = categoria;
     }
+
+    
 
     public LocalDate getFechaNacimiento() {
         return FechaNacimiento;

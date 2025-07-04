@@ -9,5 +9,14 @@ package Personas;
  * @author Student
  */
 public enum Categoria {
+    Juvenil("Juvenil"),
+    Mayor("Mayor"),
+    Master("Master");
+    
+    private String categoria;
+
+    private Categoria(String categoria) {
+        this.categoria = categoria;
+    }
     
 }
