@@ -23,7 +23,13 @@ public class Deportista extends Persona {
         this.categoria = categoria;
     }
 
-    
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
 
     public LocalDate getFechaNacimiento() {
         return FechaNacimiento;
