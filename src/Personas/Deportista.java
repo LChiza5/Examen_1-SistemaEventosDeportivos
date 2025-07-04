@@ -14,8 +14,10 @@ public class Deportista extends Persona {
     private LocalDate FechaNacimiento;
     private String disciplina;
 
-    public Deportista(int id, String nombre) {
+    public Deportista(LocalDate FechaNacimiento, String disciplina, int id, String nombre) {
         super(id, nombre);
+        this.FechaNacimiento = FechaNacimiento;
+        this.disciplina = disciplina;
     }
 
     public LocalDate getFechaNacimiento() {
